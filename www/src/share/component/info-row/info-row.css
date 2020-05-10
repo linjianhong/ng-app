@@ -1,0 +1,44 @@
+info-row {
+  display: inline-block;
+}
+
+info-row > .info-row {
+  width: 100vw;
+  height: 6em;
+  background: #fff;
+  border-bottom: solid 1px #ccc;
+}
+
+info-row > .info-row > .icon {
+  font-size: 2em;
+  width: 2em;
+}
+
+info-row > .info-row > .box {
+  padding: 1.3em .2em .5em .1em;
+}
+info-row > .info-row > .box.single-line {
+  padding: 0 .2em 0 .1em;
+}
+
+
+info-row > .info-row > .box .t1 {
+  line-height: 1;
+  font-size: 1.6em;
+  font-weight: 900;
+}
+info-row > .info-row > .box .t2 {
+  color: #800;
+}
+info-row > .info-row > .box .t3 {
+  color: #888;
+}
+info-row > .info-row > .box .t4 {
+  color: #888;
+}
+
+info-row > .info-row > .next {
+  font-size: 2em;
+  width: 1em;
+  color: #888;
+}

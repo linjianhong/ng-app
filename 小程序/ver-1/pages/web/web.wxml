@@ -1,0 +1,3 @@
+<!--pages/Web/web.wxml-->
+
+<web-view src="{{url}}#{{query}}" bindmessage="bindmessage"></web-view>

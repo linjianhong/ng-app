@@ -1,0 +1,35 @@
+/* tab条组件 */
+
+tab-bar, [tab-bar] {
+  display: flex;
+  padding: 5px 0 0;
+}
+
+[tab-bar]>*, tab-bar>* {
+  position: relative;
+  color: inherit;
+  padding: .5em 1em;
+  border-bottom: solid 5px rgba(0, 0, 0, 0);
+}
+
+[tab-bar]>.active, tab-bar>.active {
+  border-bottom: solid 5px #00f;
+  color: #000000;
+}
+
+[tab-bar].sep>*, tab-bar.sep>* {
+  border-left: solid 1px #fff;
+  border-right: solid 1px #888;
+}
+
+[tab-bar].sep>*:first-child, tab-bar.sep>*:first-child {
+  border-left: solid 0;
+}
+
+[tab-bar].sep>*:last-child, tab-bar.sep>*:last-child {
+  border-right: solid 0;
+}
+
+[tab-bar]>* span, tab-bar>* span {
+  padding: 0.3em 0;
+}

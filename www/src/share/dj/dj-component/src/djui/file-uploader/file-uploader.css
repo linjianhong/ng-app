@@ -1,0 +1,98 @@
+imgs-uploader {
+  display: inline-block;
+}
+
+imgs-uploader > .box > .img{
+  position: relative;
+  width: 5em;
+  height: 5em;
+  margin: 0 .5em .5em 0;
+  /* width: calc(33% - .5em); */
+}
+imgs-uploader > .box > .img.uploading,
+imgs-uploader > .box > .img.add{
+  border: solid 1px #cccccc;
+}
+
+imgs-uploader > .box > .img.uploading{
+  background: rgba(0,0,0,0.1);
+}
+imgs-uploader > .box > .img.uploading > .per{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+imgs-uploader > .box > .img.add:after,
+imgs-uploader > .box > .img.add:before{
+  content: ' ';
+  position: absolute;
+  background: #cccccc;
+}
+imgs-uploader > .box > .img.add:before{
+  top: 50%;
+  left: 20%;
+  width: 60%;
+  height: 1px;
+}
+imgs-uploader > .box > .img.add:after{
+  left: 50%;
+  top: 20%;
+  width: 1px;
+  height: 60%;
+}
+
+imgs-uploader > .box > input[type='file']{
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+imgs-uploader > .box > .img img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+/* 删除图标 */
+.icon-del{
+  border: 0.1em solid currentColor;
+  border-top: none;
+  border-radius: 0 0 0.2em 0.2em;
+  width: 1em;
+  height: .8em;
+  /* margin: 50px auto; */
+  position: relative;
+  margin-top: .3em;
+  color: #550055;
+}
+.icon-del::after{
+  content: " ";
+  width: 1.4em;
+  height: 0.1em;
+  position: absolute;
+  top: 0;
+  left: -0.3em;
+  background-color: currentcolor;
+}
+.icon-del::before {
+  content: " ";
+  border-radius: 0.2em 0.2em 0 0;
+  position: absolute;
+  top: -0.2em;
+  left: 0em;
+  height: 0.2em;
+  width: .6em;
+  border: 0.1em solid currentColor;
+  border-bottom: none;
+}
+
+
+
+
+

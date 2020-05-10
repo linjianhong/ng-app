@@ -1,0 +1,21 @@
+dj-component-host{
+  display: block;
+  position: absolute;
+  z-index: 900;
+  width: 100vw;
+  height: 100vh;
+  bottom: 0;
+  left:0;
+  background: #888888f8;
+}
+
+dj-component-host .dj-pop-box{
+  width: 100%;
+  height: 100%;
+}
+
+.djui-dialog-input {
+  width: 90%;
+  height: 5em;
+  margin: .8em;
+}

@@ -1,0 +1,33 @@
+
+.search-bar{
+  padding: .6em .6em;
+  background: #eeeeee;
+}
+
+.search-bar .box{
+  padding: .6em .6em;
+  background: #ffffff;
+  border-radius: .3em;
+}
+
+.search-bar .box .fa-search{
+  padding: 0 .6em 0 0;
+  color: #888888;
+}
+.search-bar .box .fa-times-circle{
+  padding: 0 .6em;
+}
+
+.search-bar .box input{
+  border: solid 0px;
+}
+
+.search-bar .btn{
+  padding: 0 .6em 0 1.2em;
+  color: #0000cc;
+  font-weight: 900;
+}
+.search-bar .disabled{
+  color: #cccccc;
+}
+

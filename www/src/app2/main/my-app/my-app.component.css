@@ -1,0 +1,139 @@
+my-app {
+  width:100vw;
+  height:100vh;
+}
+
+my-app>.header {
+  display: block;
+}
+
+my-app-header {
+  border-bottom: solid 1px #cccccc;
+}
+
+my-app-header>.header {
+  height: 4em;
+  background: -webkit-linear-gradient( #f8f8f8, #eeeeee);
+  /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient( #f8f8f8, #eeeeee);
+  /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#f8f8f8, #eeeeee);
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(#f8f8f8, #eeeeee);
+  /* 标准的语法 */
+}
+
+my-app-header>.header>* {
+  color: #333333;
+}
+
+my-app-header>.header>.text {
+  font-size: 1.4em;
+}
+
+my-app-header>.header>.btns {
+  font-size: 1.2em;
+}
+
+my-app-header>.header>.btns>* {
+  min-width: 3em;
+}
+
+my-app-header>.header>.btns i {
+  font-size: 1.5em;
+  padding: 0 .1em 0 0;
+}
+
+my-app>dj-frame {
+  display: block;
+}
+
+my-app>dj-frame>* {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+my-app>.bottom-nav {
+  height: 50px;
+  width: 100%;
+  width: 100vw;
+  border-top: solid 1px #ccc;
+  background: #eeeeee;
+  color: #555555;
+}
+
+my-app>.bottom-nav .item i {
+  font-size: 1.6em;
+  line-height: 1.5;
+}
+
+my-app>.bottom-nav .item span {
+  line-height: 1;
+}
+
+my-app>.bottom-nav .active {
+  color: #ff8800;
+}
+
+my-app>.bottom-nav .item {
+  position: relative;
+}
+
+my-app>.bottom-nav .item>.n {
+  position: absolute;
+  left: calc(1em + 50%);
+  top: .05em;
+  border-radius: 100%;
+  background: #ff0000;
+  color: #ffffff;
+  font-size: .6em;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+/* 页面切换动画 */
+
+.view-animate {
+  position: relative;
+}
+
+.view-animate>.ng-hide-remove, .view-animate>.ng-hide-add, .view-animate>.ng-enter {
+  transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) .3s;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  /* height: 100vh; */
+  overflow-y: hidden;
+}
+
+.view-animate>.ng-enter, .view-animate>.ng-hide-remove {
+  left: 100%;
+}
+
+.view-animate>.ng-enter.ng-enter-active, .view-animate>.ng-hide-remove.ng-hide-remove-active {
+  left: 0;
+}
+
+.view-animate>.ng-hide-add.ng-hide-add-active {
+  left: -100%;
+}
+
+.back.view-animate>.ng-hide-remove {
+  left: -100%;
+}
+
+.back.view-animate>.ng-hide-remove.ng-hide-remove-active {
+  left: 0;
+}
+
+.back.view-animate>.ng-hide-add.ng-hide-add-active {
+  left: 100%;
+}
+
+.view-animate>.fitst-show {
+  left: 100%;
+}

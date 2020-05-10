@@ -1,0 +1,32 @@
+fa-button {
+  display: inline-block;
+  margin: .5em;
+}
+
+fa-button > .fa-button {
+  padding: .5em .8em;
+  border-radius: .5em;
+  box-shadow: 3px 3px 3px #888;
+}
+fa-button > .fa-button i{ margin-right: .5em; }
+
+fa-button.default  > .fa-button{  background: #eeeeee;  color: #555555;}
+fa-button.primary  > .fa-button{  background: #5555cc;  color: #ffffff;}
+fa-button.danger   > .fa-button{  background: #cc3366;  color: #ffffff;}
+fa-button.info     > .fa-button{  background: #6699cc;  color: #ffffff;}
+fa-button.warning  > .fa-button{  background: #ff8800;  color: #ffffff;}
+fa-button.comment  > .fa-button{  background: #cc33ff;  color: #ffffff;}
+fa-button > .disabled.fa-button,
+fa-button.disabled > .fa-button{  background: #cccccc;  color: #ffffff;}
+
+
+.header.xp {
+  background: -webkit-linear-gradient( #f8f8f8, #dddddd);
+  /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient( #f8f8f8, #dddddd);
+  /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#f8f8f8, #dddddd);
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(#f8f8f8, #dddddd);
+  /* 标准的语法 */
+}

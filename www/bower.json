@@ -1,0 +1,54 @@
+{
+  "name": "app-gulp",
+  "version": "1.2.0",
+  "description": "my-app frame",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/laolin/app-gulp.git"
+  },
+  "authors": ["Lin JH"],
+  "private": false,
+  "devDependencies": {
+    "angular-mocks": "1.6.1"
+  },
+  "dependencies": {
+    "angular": "1.6.1",
+    "angular-ui-router": "1.0.18",
+    "angular-animate": "1.6.1",
+    "angular-touch": "1.6.1",
+    "angular-moment": "1.3.0",
+    "js-md5": "md5#^0.4.2",
+    "font-awesome": "4.7.0"
+  },
+  "overrides": {
+    "angular-ui-router": {
+      "main": [
+        "release/angular-ui-router.js",
+        "release/stateEvents.js"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.css"
+      ]
+    },
+    "dj-component": {
+      "main": [
+        "dist/dj-component.js",
+        "dist/dj-component.min.css"
+      ]
+    },
+    "dj-service": {
+      "main": [
+        "dist/dj-service.js"
+      ]
+    },
+    "moment": {
+      "main": [
+        "moment.js",
+        "locale/zh-cn.js"
+      ]
+    }
+  }
+}

@@ -1,0 +1,95 @@
+
+djui-gallery{
+  display: block;
+  width: 100%;
+  height:100%;
+}
+.djui-gallery-box{
+  position: relative;
+  width: 100%;
+  height:100%;
+  background: #cccccc;
+  overflow-x: hidden;
+}
+.djui-gallery-box .djui-gallery-top {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0);
+}
+
+
+.djui-gallery-box > .djui-gallery-list {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-transform-style:preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style:preserve-3d;
+  -webkit-transition-property:-webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -ms-transition-property: -ms-transform;
+  transition-property:transform;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.djui-gallery-box > .djui-gallery-list  > * {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background: #cccccc;
+}
+
+.djui-gallery-box > .djui-gallery-list  > * > img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.djui-gallery-box > .djui-gallery-debug  {
+  position: absolute;
+  z-index: 2;
+  top: 3em;
+  left: 0;
+  width: 100%;
+  height: 5em;
+  background: #ffcccccc;
+  text-align: center;
+}
+
+
+.djui-gallery-nav  {
+  position: absolute;
+  z-index: 2;
+  bottom: 1.5em;
+  left: 0;
+  width: 100%;
+}
+.djui-gallery-nav > *,
+.djui-gallery-nav > * > *{
+  font-size: inherit;
+  line-height: 1.1;
+}
+
+.djui-gallery-nav > .btns {
+  padding-right: 1em;
+}
+.djui-gallery-nav > .btns > * {
+  background: #88888888;
+  padding: .5em 1em;
+  border-radius: .5em;
+}

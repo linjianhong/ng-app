@@ -1,0 +1,32 @@
+.djui-fixed-box > login-form-phone {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .3);
+}
+
+login-form-phone > .login-form-phone> .phone-login-box {
+  min-width: 72%;
+  background: #fff;
+  border-radius: .6em;
+}
+
+login-form-phone > .login-form-phone> .phone-login-box > * {
+  padding: 1.2em;
+}
+login-form-phone > .login-form-phone> .phone-login-box > .btns {
+  border-top: solid 1px #ccc;
+  padding: 0;
+}
+login-form-phone > .login-form-phone> .phone-login-box > .btns > * {
+  padding: 1.2em;
+}
+login-form-phone > .login-form-phone> .phone-login-box > .btns > *:first-child {
+  border-right:solid 1px #ccc;
+}
+
+input-phone-verify-code>div{
+  background: #eee;
+}
+input-phone-verify-code>div.disabled{
+  color: #ccc;
+}
