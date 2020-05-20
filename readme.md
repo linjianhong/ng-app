@@ -9,7 +9,7 @@
 
 
 ### 下载
-```git clone https://github.com/linjianhong/stock.git```
+```git clone https://github.com/linjianhong/ng-app.git```
 
 
 ### 前端环境架设
@@ -61,7 +61,7 @@
 1. `https://domain.com/html/app1.preview.html`
 
 ### 版本更新
-1. 前端, 构建发布内容
+1. 前端, 构建.bat - 2
 1. 后端, 更新API
 1. 更新 `vers-server/config.inc.php` 中对应app的版本中 `files` 内容
 1. 测试
