@@ -26,7 +26,13 @@ function SaveLog($request, $result) {
   ];
   if (in_array("$request->api/$request->call", $API_IGNORE)) {return;}
 
-  $db = \MyClass\CDbBase::db('log_db');
+  try {
+    $db_config_name = 'log_db';
+    $db = \MyClass\CDbBase::db($db_config_name);
+  } catch (\Exception $e) {
+    \DJApi\API::debug(['SaveLog error:' => $e->getMessage(), "CONFIG NAME" => $db_config_name]);
+    return;
+  }
   $query = [];
   foreach ($request->query as $k => $v) {
     if (!in_array($k, ['api', 'call', '__para1', '__para2', 'tokenid', 'timestamp', 'sign'])) {
@@ -48,7 +54,13 @@ function SaveLog($request, $result) {
  * 保存浏览器信息
  */
 function SaveBrowser($request) {
-  $db = \MyClass\CDbBase::db('log_db');
+  try {
+    $db_config_name = 'log_db';
+    $db = \MyClass\CDbBase::db($db_config_name);
+  } catch (\Exception $e) {
+    \DJApi\API::debug(['SaveLog error:' => $e->getMessage(), "CONFIG NAME" => $db_config_name]);
+    return;
+  }
   if ($request->api != 'app' || $request->call != 'verify_token') {
     return;
   }
