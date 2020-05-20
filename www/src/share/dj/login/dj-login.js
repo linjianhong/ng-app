@@ -136,6 +136,9 @@
    */
   theModule.run(["$rootScope", "$http", "$q", "sign", function ($rootScope, $http, $q, sign) {
 
+    $rootScope.$on("微信code登录失败", ()=>{
+      FN["登录失败"]();
+    });
     var FN = {
 
       "开始登录": function (param) {

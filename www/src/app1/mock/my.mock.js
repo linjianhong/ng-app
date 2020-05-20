@@ -22,11 +22,25 @@
     sign.registerHttpHook({
       match: /^我的-基本信息$/,
       hookRequest: function (config, mockResponse, match) {
-        return mockResponse.OK({me:{
-          name: "大风",
-          uid: 123,
-          role: "管理员",
-        }});
+        /** 检查登录状态 */
+        var mock_me = $http.post("用户登录/状态").then(tokenData => {
+          return {
+            me: {
+              name: "大风",
+              uid: 123,
+              role: "管理员",
+            }
+          };
+        }).catch(e => {
+          return {
+            me: {
+              name: "未登录",
+              uid: "---",
+              role: "游客",
+            }
+          };
+        });
+        return mockResponse.OK(mock_me);
       }
     });
   }]);
