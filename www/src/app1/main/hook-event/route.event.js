@@ -56,11 +56,10 @@
         if (!wxShareParam) {
           // console.log("使用默认分享", wxShareParam);
           $http.post("WxJssdk/setShare", {
-            title: "仙龙山古典家具一物一码系统", // 分享标题
-            desc: "一物一器，专享定制", // 分享描述
-            link: location.origin + location.pathname + "#/my", // 分享链接
-            imgUrl: "httpS://jdyhy.oss-cn-beijing.aliyuncs.com/www/store/assert/images/xls.logo.png", // 分享图标
-            img_url: "httpS://jdyhy.oss-cn-beijing.aliyuncs.com/www/store/assert/images/xls.logo.png", // 分享图标
+            title: "欢迎使用《ng-app》框架", // 分享标题
+            desc: "简单构建angularJs+PHP单页面应用", // 分享描述
+            link: location.origin + location.pathname + "#", // 分享链接
+            imgUrl: "https://jdyhy.oss-cn-beijing.aliyuncs.com/www/store/assert/images/xls.logo.png", // 分享图标
             type: 'link', // 分享类型,music、video或link，不填默认为link
             success: function (res) {
               console.log("默认分享成功", res);
@@ -91,8 +90,6 @@
     /** 路由监听 */
     $rootScope.$on('$DjRouteChangeStart', function (event, newState, oldState) {
       LogStatus.recheck();
-
-
 
       var needLogin = checkNeedLogin(newState);
       // console.log("DjRouteChangeStart", newState, oldState);
